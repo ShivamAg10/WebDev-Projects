@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <a href="{% url 'logout' %}">logout</a>
+    <div class="container">
+        <form method="post">
+        {% csrf_token %}
+        <div class="box">
+            <h2>To Do List</h2>
+            <div class="insideBox1">
+            <input name="todo" type="text" placeholder="Write here..." class="inputBx">
+            <input type="submit" class="inputBx" id="addBtn" value="Add">
+            </div>
+            <br>
+            <input name="date" type="date" class="inputBx" id="dateBx"> 
+        </form>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <ul type="none">
+                {% for lists in list %}
+                <li>
+                    <div class="list">
+                        <div class="text">
+                            {{lists.todo}}
+                        </div>
+                        <div class="doneBtn">
+                            <a href="{% url 'editList' lists.id %}">
+                                Update
+                            </a>
+                        </div>
+                        <div class="deleteBtn">
+                            <a href="{% url 'deleteList' lists.id %}">
+                                Done
+                            </a>
+                        </div>
+                    </div>
+                </li><br>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

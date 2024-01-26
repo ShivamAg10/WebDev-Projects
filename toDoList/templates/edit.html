@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <a href="{% url 'dashboard' %}">Back</a>
+    <div class="container">
+        <form method="post">
+        {% csrf_token %}
+        <div class="box">
+            <h2>Edit Your task</h2>
+            <div class="insideBox1">
+            <input name="todo" type="text" placeholder="Write here..." class="inputBx">
+            <input type="submit" class="inputBx" id="addBtn" value="Add">
+            </div>
+            <br> 
+        </form>
+            <br>
+            <br>
+            <hr>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
