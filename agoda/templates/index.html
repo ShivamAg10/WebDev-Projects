@@ -1,0 +1,564 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agoda</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+
+    <!-- navbar starts -->
+    <div class="nav">
+
+        <div class="nav-items" id="logo">
+
+            <img src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg" alt="">
+
+        </div>
+        <div class="nav-items" id="flight_hotel">
+            <a href="">Flight + Hotel</a> 
+        </div>
+        <div class="nav-items" id="hotels_homes">
+            <a href="">Hotels & Homes</a> 
+        </div>
+        <div class="nav-items" id="flights">
+            <a href="">Flights</a> 
+        </div>
+        <div class="nav-items" id="coupons_deals">
+            <a href="">Coupons & Deals</a> 
+        </div>
+        <div class="nav-items" id="airportTransfer">
+            <a href="">Airport Transfer</a> 
+        </div>
+        <div class="nav-items" id="privateStays">
+            <a href="">Private Stays</a> 
+        </div>
+        <div class="nav-items" id="activities">
+            <a href="">Activities</a> 
+        </div>
+        <div class="nav-items" id="apartments">
+            <a href="">Apartments</a> 
+        </div>
+        <div class="nav-items" id="carRentals">
+            <a href="">Car Rentals</a> 
+        </div>
+        <div class="nav-items" id="signin">
+            <button class="signinbtn">
+                Signin
+            </button>
+        </div>
+        <div class="nav-items" id="createAccount">
+            <button class="signinbtn">
+                Create Account
+            </button>
+        </div>
+        <div class="nav-items" id="cart">
+            <a href="">Cart</a> 
+        </div>
+
+    </div>
+    <!-- navbar ends -->
+
+    <!-- any information starts -->
+    <div class="guidance">
+
+        <div class="icon">
+            <img src="https://img.agoda.net/images/INTTRV-45/default/Bags-heart_2021-09-30.svg" alt="">
+        </div>
+        <div class="iconPara">
+            <p>
+                Traveling internationally? Get updated information on COVID-19 travel guidance and restrictions.
+            </p>
+        </div>
+        <div class="learnMore">
+            <button class="learnMoreBtn">
+                Learn More
+            </button>
+        </div>
+
+    </div>
+    <!-- any information ends -->
+
+    <!-- booking form starts -->
+    <div class="booking">
+        <div class="bookingdiv" id="bookingdivHeader">
+            <div class="bookingHeader">
+            <div class="bookingHeaderItems">
+                <a href="">Hostel & Homes</a>
+            </div>
+            <div class="bookingHeaderItems">
+                <a href="">Private Stays</a>
+            </div>
+            <div class="bookingHeaderItems">
+                <a href="">Flight + Hotel</a>
+            </div>
+            <div class="bookingHeaderItems">
+                <a href="">Flights</a>
+            </div>
+            <div class="bookingHeaderItems">
+                <a href="">Activities</a>
+            </div>
+            <div class="bookingHeaderItems">
+                <a href="">Airport Transfer</a>
+            </div>
+            </div>
+        </div>
+        <div class="bookingdiv" id="bookingdivForm">
+            <div class="bookingForm">
+                <form method="post">
+                    <div class="destination">
+                        <input type="text" name="destination" id="destination" placeholder="Enter a destination or property">
+                        <br><br>
+                        <div class="destinationDate">
+                            <div class="destinationDateStart">
+                                <center>Date from:</center>
+                                <input type="date" name="sdate" id="destination">
+                            </div>
+                            to
+                            <div class="destinationDateEnd">
+                                <center>Date to:</center>
+                                <input type="date" name="edate" id="destination">
+                            </div>
+                            <div class="destinationAdult">
+                                Adult: 
+                                <input type="number" name="adult" id="destination" placeholder="0">
+                            </div>
+                        </div>
+
+                        <div class="destinationSearchBtn">
+                            <button class="learnMoreBtn" id="destinationSearchBtn">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- booking form ends -->
+
+    <!-- Top Destination in India starts -->
+    <div class="topDestination">
+        <div class="topDestinationHeading">
+            <h2>Top Destinations in India</h2>
+        </div>
+        <br>
+        <div class="topDestinationImages">
+            <a href="">
+                <div class="TDI1">
+                    <img src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="">
+                    <h4>New Delhi and NCR</h4>
+                    <h6>30000 accoumodations</h6>
+                </div>
+            </a>
+            <a href="">
+                <div class="TDI1">
+                    <img src="https://pix6.agoda.net/geo/city/11304/077a5dc2a344a604731be86537916ba0.jpg?ce=0&s=345x345&ar=1x1" alt="">
+                    <h4>Goa</h4>
+                    <h6>30000 accoumodations</h6>
+                </div>
+            </a>
+            <a href="">
+                <div class="TDI1">
+                    <img src="https://pix6.agoda.net/geo/city/4923/1_4923_02.jpg?ca=8&ce=1&s=345x345&ar=1x1" alt="">
+                    <h4>Banglore</h4>
+                    <h6>30000 accoumodations</h6>
+                </div>
+            </a>
+        </div>
+        <br>
+        
+        <div class="topDestinationMoreBtn">
+            <a href="">
+                <button>
+                    More
+                </button>
+            </a>
+        </div>
+    </div>
+    <!-- Top Destination in India ends -->
+
+    <!-- Popular Destination outside India starts -->
+    <div class="topDestination" id="popularDestination">
+        <div class="topDestinationHeading" id="popularDestinationHeading">
+            <h2>Popular Destination outside India</h2>
+        </div>
+        <br>
+        <div class="topDestinationImages" id="popularDestinationImages">
+            <a href="">
+                <div class="TDI1">
+                    <img src="https://pix6.agoda.net/geo/city/14524/0435b08918aeb5e6ba2c933def5a3b57.jpg?ce=0&s=345x345&ar=1x1" alt="">
+                    <h4>Kuala Lumpur</h4>
+                    <h6>30000 accoumodations</h6>
+                </div>
+            </a>
+            <a href="">
+                <div class="TDI1">
+                    <img src="https://pix6.agoda.net/geo/city/9395/1_9395_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="">
+                    <h4>Bangkok</h4>
+                    <h6>30000 accoumodations</h6>
+                </div>
+            </a>
+            <a href="">
+                <div class="TDI1">
+                    <img src="https://pix6.agoda.net/geo/city/16087/1_16087_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="">
+                    <h4>Penang</h4>
+                    <h6>30000 accoumodations</h6>
+                </div>
+            </a>
+        </div>
+        <br>
+        
+        <div class="topDestinationMoreBtn" id="popularDestinationMoreBtn">
+            <a href="">
+                <button>
+                    More
+                </button>
+            </a>
+        </div>
+    </div>
+    <!-- Popular Destination outside India ends -->
+
+    <!-- Footer starts -->
+
+    <!-- Footer 1 starts -->
+    <div class="footer1">
+        <div class="footer1Items">
+            <div id="footerHelp">
+                <h4>Help</h4>
+                <br>
+                <ul type="none">
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">Manage cookie settings</a></li>
+                </ul>
+            </div>
+            <div id="footerCompany">
+                <h4>Company</h4>
+                <br>
+                <ul type="none">
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">PointsMAX</a></li>
+                </ul>
+            </div>
+            <div id="footerDestinations">
+                <h4>Destinations</h4>
+                <br>
+                <ul type="none">
+                    <li><a href="">Countries/Territories</a></li>
+                    <li><a href="">Cities</a></li>
+                </ul>
+            </div>
+            <div id="footerPartners">
+                <h4>Partner with us</h4>
+                <br>
+                <ul type="none">
+                    <li><a href="">YCS partner portal</a></li>
+                    <li><a href="">Partner Hub</a></li>
+                    <li><a href="">Advertise on Agoda</a></li>
+                    <li><a href="">Affliates</a></li>
+                    <li><a href="">Connectivity partners</a></li>
+                </ul>
+            </div>
+            <div id="footerApp">
+                <h4>Get the app</h4>
+                <br>
+                <ul type="none">
+                    <li><a href="">iOS app</a></li>
+                    <li><a href="">Android app</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer 1 ends -->
+
+    <!-- Footer 2 starts -->
+    <div class="footer2">
+        <div class="footer2Items">
+            <div id="footerDestination1">
+                <h5>Destination Cities</h5>
+                <br>
+                <h5>Asia</h5>
+                <ul type="none">
+                    <li><a href="">Bali Hotels</a></li>
+                    <li><a href="">Bandung Hotels</a></li>
+                    <li><a href="">Bangkok Hotels</a></li>
+                    <li><a href="">Boracay Island Hotels</a></li>
+                    <li><a href="">Busan Hotels</a></li>
+                    <li><a href="">Cebu Hotels</a></li>
+                    <li><a href="">Chiang Mai Hotels</a></li>
+                    <li><a href="">Da Nang Hotels</a></li>
+                    <li><a href="">Fukuoka Hotels</a></li>
+                    <li><a href="">Hanoi Hotels</a></li>
+                    <li><a href="">Hat Yai Hotels</a></li>
+                    <li><a href="">Ho Chi Minh City Hotels</a></li>
+                    <li><a href="">Hoi An Hotels</a></li>
+                    <li><a href="">Hong Kong Hotels</a></li>
+                    <li><a href="">Hua Hin Hotels</a></li>
+                    <li><a href="">Hualein Hotels</a></li>
+                    <li><a href="">Ipoh Hotels</a></li>
+                    <li><a href="">Jakarta Hotels</a></li>
+                    <li><a href="">Jeju Island Hotels</a></li>
+                    <li><a href="">Johor Bahru Hotels</a></li>
+                    <li><a href="">Kaohsiung Hotels</a></li>
+                    <li><a href="">Kota Kinabalu Hotels</a></li>
+                    <li><a href="">Krabi Hotels</a></li>
+                    <li><a href="">Kuala Lumpur Hotels</a></li>
+                    <li><a href="">Kuantan Hotels</a></li>
+                    <li><a href="">Kyoto Hotels</a></li>
+                </ul>
+            </div>
+            <div id="footerDestination2">
+                <br>
+                <ul type="none">
+                    <li><a href="">Macau Hotels</a></li>
+                    <li><a href="">Malacca Hotels</a></li>
+                    <li><a href="">Manila Hotels</a></li>
+                    <li><a href="">Nagoya Hotels</a></li>
+                    <li><a href="">Nha Trang Hotels</a></li>
+                    <li><a href="">Okinawa Hotels</a></li>
+                    <li><a href="">Pattaya Hotels</a></li>
+                    <li><a href="">Penang Hotels</a></li>
+                    <li><a href="">Phuket Hotels</a></li>
+                    <li><a href="">Sapporo Hotels</a></li>
+                    <li><a href="">Seoul Hotels</a></li>
+                    <li><a href="">Shanghai Hotels</a></li>
+                    <li><a href="">Singapore Hotels</a></li>
+                    <li><a href="">Surabaya Hotels</a></li>
+                    <li><a href="">Taichung Hotels</a></li>
+                    <li><a href="">Tainan Hotels</a></li>
+                    <li><a href="">Taipei Hotels</a></li>
+                    <li><a href="">Tokyo Hotels</a></li>
+                    <li><a href="">Yilan Hotels</a></li>
+                    <li><a href="">Yogyakarta Hotels</a></li>
+                </ul>
+                <br>
+                <h5>Europe</h5>
+                <ul type="none">
+                    <li><a href="">London Hotels</a></li>
+                    <li><a href="">Paris Hotels</a></li>
+                </ul>
+                <br>
+                <h5>Middle East</h5>
+                <ul type="none">
+                    <li><a href="">Dubai Hotels</a></li>
+                </ul>
+            </div>
+            <div id="footerDestination3">
+                <h5>Countries & Territories</h5>
+                <br>
+                <h5>Asia</h5>
+                <ul type="none">
+                    <li><a href="">Morocco Hotels</a></li>
+                    <li><a href="">South Africa Hotels</a></li>
+                </ul>
+                <h5>Americas</h5>
+                <ul type="none">
+                    <li><a href="">Argentina Hotels</a></li>
+                    <li><a href="">Brazil Hotels</a></li>
+                    <li><a href="">Canada Hotels</a></li>
+                    <li><a href="">Mexico Hotels</a></li>
+                    <li><a href="">United States Hotels</a></li>
+                    <li><a href="">Venezuela Hotels</a></li>
+                </ul>
+                <h5>Asia</h5>
+                <ul type="none">
+                    <li><a href="">Cambodia Hotels</a></li>
+                    <li><a href="">China Hotels</a></li>
+                    <li><a href="">India Hotels</a></li>
+                    <li><a href="">Indonesia Hotels</a></li>
+                    <li><a href="">Japan Hotels</a></li>
+                    <li><a href="">Laos Hotels</a></li>
+                    <li><a href="">Malasiya Hotels</a></li>
+                    <li><a href="">Myanmar Hotels</a></li>
+                    <li><a href="">Nepal Hotels</a></li>
+                    <li><a href="">Philippines Hotels</a></li>
+                    <li><a href="">South Korea Hotels</a></li>
+                    <li><a href="">Sri Lanka Hotels</a></li>
+                    <li><a href="">Taiwan Hotels</a></li>
+                    <li><a href="">Thailand Hotels</a></li>
+                    <li><a href="">Vietnam Hotels</a></li>
+                </ul>
+            </div>
+            <div id="footerDestination4">
+                <h5>Europe</h5>
+                <ul type="none">
+                    <li><a href="">Austria Hotels</a></li>
+                    <li><a href="">Czech Republic Hotels</a></li>
+                    <li><a href="">Denmark Hotels</a></li>
+                    <li><a href="">Finland Hotels</a></li>
+                    <li><a href="">France Hotels</a></li>
+                    <li><a href="">Germany Hotels</a></li>
+                    <li><a href="">Hungary Hotels</a></li>
+                    <li><a href="">Ireland Hotels</a></li>
+                    <li><a href="">Italy Hotels</a></li>
+                    <li><a href="">Netherlands Hotels</a></li>
+                    <li><a href="">Russia Hotels</a></li>
+                    <li><a href="">Spain Hotels</a></li>
+                    <li><a href="">Sweden Hotels</a></li>
+                    <li><a href="">Switzerland Hotels</a></li>
+                    <li><a href="">United Kingdom Hotels</a></li>
+                </ul>
+                <br>
+                <h5>Middle East</h5>
+                <ul type="none">
+                    <li><a href="">Bahrain Hotels</a></li>
+                    <li><a href="">Egypt Hotels</a></li>
+                    <li><a href="">Israel Hotels</a></li>
+                    <li><a href="">United Arab Emirates Hotels</a></li>
+                </ul>
+                <br>
+                <h5>Oceania</h5>
+                <ul type="none">
+                    <li><a href="">Australia Hotels</a></li>
+                    <li><a href="">New Zealand Hotels</a></li>
+                </ul>
+            </div>
+            <div id="footerDestination5">
+                <h5>Destination Guides</h5>
+                <ul type="none">
+                    <li><a href="">Destination Guides Home</a></li>
+                </ul>
+                <br>
+                <h5>Asia</h5>
+                <ul type="none">
+                    <li><a href="">Bali Guide</a></li>
+                    <li><a href="">Bangkok Guide</a></li>
+                    <li><a href="">Hong Kong Guide</a></li>
+                    <li><a href="">Jakarta Guide</a></li>
+                    <li><a href="">Kuala Lumpur Guide</a></li>
+                    <li><a href="">Kyoto Guide</a></li>
+                    <li><a href="">Kyushu Guide</a></li>
+                    <li><a href="">Malacca Guide</a></li>
+                    <li><a href="">Manila Guide</a></li>
+                    <li><a href="">Nara Guide</a></li>
+                    <li><a href="">Osaka Guide</a></li>
+                    <li><a href="">Phuket Guide</a></li>
+                    <li><a href="">Sapporo Guide</a></li>
+                    <li><a href="">Seoul Guide</a></li>
+                    <li><a href="">Singapore Guide</a></li>
+                    <li><a href="">Taichung Guide</a></li>
+                    <li><a href="">Taipei Guide</a></li>
+                    <li><a href="">Tokyo Guide</a></li>
+                    <li><a href="">Korea Tourism organization</a></li>
+                </ul>
+                <br>
+                <h5>Europe</h5>
+                <ul type="none">
+                    <li><a href="">Paris Guide</a></li>
+                </ul>
+                <br>
+                <h5>Middle East</h5>
+                <ul type="none">
+                    <li><a href="">Dubai Guide</a></li>
+                    <li><a href="">Jeddah Guide</a></li>
+                    <li><a href="">Saudi Arabia Guide</a></li>
+                </ul>
+                <br>
+                <h5>Oceania</h5>
+                <ul type="none">
+                    <li><a href="">Brisbane Guide</a></li>
+                    <li><a href="">Melbourne Guide</a></li>
+                    <li><a href="">Sydney Guide</a></li>
+                </ul>
+            </div>
+            <div id="footerDestination6">
+                <h5>Agoda Homes</h5>
+                <br>
+                <h5>Asia Apartments</h5>
+                <ul type="none">
+                    <li><a href="">Bangkok Apartments</a></li>
+                    <li><a href="">Kuala Lumpur Apartments</a></li>
+                    <li><a href="">Manila Apartments</a></li>
+                    <li><a href="">Osaka Apartments</a></li>
+                    <li><a href="">Pattaya Apartments</a></li>
+                    <li><a href="">Tokyo Apartments</a></li>
+                </ul>
+                <br>
+                <h5>Asia Bungalows</h5>
+                <ul type="none">
+                    <li><a href="">Bali Bungalows</a></li>
+                    <li><a href="">Koh Kood Lumpur Bungalows</a></li>
+                    <li><a href="">Koh Lanta Bungalows</a></li>
+                    <li><a href="">Koh Phangan Bungalows</a></li>
+                    <li><a href="">Koh Samet Bungalows</a></li>
+                    <li><a href="">Phu Quoc Island Bungalows</a></li>
+                </ul>
+                <br>
+                <h5>Asia Villas</h5>
+                <ul type="none">
+                    <li><a href="">Bali Villas</a></li>
+                    <li><a href="">Phuket Lumpur Villas</a></li>
+                    <li><a href="">Pattaya Villas</a></li>
+                    <li><a href="">Hua Hin / Cha-am Villas</a></li>
+                    <li><a href="">Seoul Villas</a></li>
+                    <li><a href="">Port Dickson Villas</a></li>
+                </ul>
+                <br>
+                <h5>Asia Vacation Rentals</h5>
+                <ul type="none">
+                    <li><a href="">Jeju Island Vacation Rentals</a></li>
+                    <li><a href="">Okinawa Main Island Vacation Rentals</a></li>
+                    <li><a href="">Tokyo Vacation Rentals</a></li>
+                    <li><a href="">Bangkok Rentals</a></li>
+                    <li><a href="">Kuala Lumpur Rentals</a></li>
+                    <li><a href="">Malacca Vacation Rentals</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer 2 ends -->
+
+    <!-- Footer 3 starts -->
+    <div class="footer3">
+        <div class="footer3Item1">
+            <p>
+                All material herein © 2005-2023 Agoda Company Pte. Ltd. All Rights Reserved.
+            </p>
+            <p>
+                Agoda is part of Booking Holdings Inc., the world leader in online travel & related services.
+            </p>
+        </div>
+        <br>
+        <div class="footer3Item2">
+            <div class="footer3Item2Logo">
+                <img src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg" alt="">
+            </div>
+            <div class="footer3Item2Logo">
+                <img src="https://s1.pclncdn.com/design-assets/gns/priceline.svg" alt="">
+            </div>
+            <div class="footer3Item2Logo">
+                <img src="https://s1.pclncdn.com/design-assets/gns/kayak.svg" alt="">
+            </div>
+            <div class="footer3Item2Logo">
+                <img src="https://s1.pclncdn.com/design-assets/gns/rentalcars.svg" alt="">
+            </div>
+            <div class="footer3Item2Logo">
+                <img src="https://s1.pclncdn.com/design-assets/gns/booking-dot-com.svg" alt="">
+            </div>
+            <div class="footer3Item2Logo">
+                <img src="https://s1.pclncdn.com/design-assets/gns/opentable.svg" alt="">
+            </div>
+        </div>
+        <br><br>
+        <div class="footer3Item3">
+            sg-pc-6g-acm-web-user-86b5c74bbf-gdnn4
+        </div>
+    </div>
+    <!-- Footer 3 ends -->
+
+    <!-- Footer Ends -->
+</body>
+</html>

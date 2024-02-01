@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.573);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.42857;
+    font-family: mallory,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* text-decoration: none; */
+}
+
+.nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* border: 1px solid red; */
+    color: rgb(42, 42, 46);
+    width: 100%;
+    height: 50px;
+}
+
+#logo img{
+    height: 25px;
+    width: 100%;
+}
+
+.nav-items{
+    height: 20px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: rgb(42, 42, 46);
+}
+
+.nav-items a:hover{
+    color: #5392f9;
+}
+
+button{
+    color: #5392f9;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    transform: 0.7s;
+}
+
+#createAccount button{
+    border: 1px solid #5392f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+}
+
+#signin button{
+    /* border: 1px solid #5392f9; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+}
+
+button:hover{
+    height: 20px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #5392f9;
+    border: 1px solid #5392f9;
+    border-radius: 5px;
+}
+
+.guidance{
+    background-color: rgb(253, 238, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* border: 1px solid red; */
+    color: rgb(42, 42, 46);
+    width: 100%;
+    height: 50px;
+}
+
+.learnMore button{
+    border: 1px solid #5392f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+}
+
+.booking{
+    /* background: url("{% static 'img/Manilla.jpg' %}"); */
+    width: 100%;
+    height: 180px;
+}
+
+.bookingdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookingdivHeader{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.bookingHeader{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bookingHeaderItems a{
+    text-decoration: none;
+    color: rgb(42, 42, 46);
+}
+
+.bookingForm{
+    width: 800px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* margin-top: 50px; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#bookingdivForm{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.destination{
+    margin-top: 30px;
+}
+
+#destination{
+    width: 100%;
+}
+
+.bookingForm form{
+    width: 90%;
+}
+
+input{
+    height: 40px;
+    padding: 10px;
+}
+
+.destinationDate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.destinationSearchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px;
+}
+
+#destinationSearchBtn{
+    height: 40px;
+    cursor: pointer;
+    /* margin-left: 400px; */
+}
+
+.topDestinationHeading{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topDestinationImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topDestinationImages img{
+    width: 245px;
+    height: 245px;
+}
+
+.topDestinationImages a{
+    text-decoration: none;
+}
+
+.topDestinationImages a h4{
+    color: rgb(42, 42, 46);
+}
+
+.TDI1 h4{
+    text-align: center;
+}
+
+.TDI1 h6{
+    text-align: center;
+    color: #737373;
+}
+
+.topDestinationMoreBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topDestinationMoreBtn button{
+    height: 30px;
+    width: 100px;
+}
+
+#popularDestination{
+    margin-top: -200px;
+}
+
+.footer1{
+    background-color: #E9EBEE;
+    padding: 50px;
+}
+
+.footer1Items h4, a{
+    color: #2A2A2E;
+    text-decoration: none;
+}
+
+.footer1Items a{
+    font-size: 12px;
+}
+
+.footer1Items{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* margin-right: 10px; */
+}
+
+.footer1Items a:hover{
+    text-decoration-line: underline;
+}
+
+.footer2{
+    padding: 50px;
+}
+
+.footer2Items{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: #737373;
+}
+
+.footer2Items a, h5{
+    color: #737373;
+    font-size: 9px;
+}
+
+.footer2Items a:hover{
+    color: #5392f9;
+    font-weight: bold;
+}
+
+.footer3{
+    text-align: center;
+    background-color: #2A2A2E;
+    color: #D7D7D8;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.footer3Item2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.footer3Item2Logo img{
+    width: 75px;
+    height: 75px;
+}
+
+.footer3Item3{
+    font-size: 10px;
+    align-items: flex-end;
+}

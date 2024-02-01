@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin Page -- agoda</title>
+    <link rel="stylesheet" href="{% static 'css/accounts/createAccount.css' %}">
+</head>
+<body>
+
+    <!-- navbar starts -->
+    <!-- navbar ends -->
+
+    <!-- Signin form starts -->
+    <div class="container">
+        <div class="signin">
+            <h2>Sign up</h2>
+            <br>
+            <hr>
+            <br>
+            <form method="post">
+                <p>First Name</p>
+                <input type="text" name="fname">
+                <br><br>
+                <p>Last Name</p>
+                <input type="text" name="lname">
+                <br><br>
+                <p>Email</p>
+                <input type="text" name="email">
+                <br><br>
+                <p>Password</p>
+                <input type="password" name="password">
+                <br><br>
+                <p>Confirm Password</p>
+                <input type="password" name="password">
+                <br><br>
+                <input type="submit" value="Sign up" id="submitBtn">
+            </form>
+            <br><br>
+            <p id="signinlast">
+                By signing in, I agree to Agoda's 
+                <a href="">Terms of Use</a>
+                and 
+                <a href="">Privacy Policy</a>.
+            </p>
+        </div>
+    </div>
+    <!-- Signin form ends -->
+
+    <!-- footer starts -->
+
+    <!-- footer1 starts -->
+    <!-- footer1 ends -->
+
+    <!-- footer3 starts -->
+    <!-- footer3 ends -->
+
+    <!-- footer ends -->
+
+</body>
+</html>
