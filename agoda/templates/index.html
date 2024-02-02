@@ -45,16 +45,24 @@
         <div class="nav-items" id="carRentals">
             <a href="">Car Rentals</a> 
         </div>
+        {% if user == None %}
         <div class="nav-items" id="signin">
-            <button class="signinbtn">
+            <a href="{% url 'signin' %}" class="signinbtn">
                 Signin
-            </button>
+            </a>
         </div>
         <div class="nav-items" id="createAccount">
-            <button class="signinbtn">
+            <a href="{% url 'createAccount' %}" class="signinbtn">
                 Create Account
-            </button>
+            </a>
         </div>
+        {% else %}
+        <div class="nav-items" id="createAccount">
+            <a href="{% url 'logout' %}" class="signinbtn">
+                Logout
+            </a>
+        </div
+        {% endif %}
         <div class="nav-items" id="cart">
             <a href="">Cart</a> 
         </div>

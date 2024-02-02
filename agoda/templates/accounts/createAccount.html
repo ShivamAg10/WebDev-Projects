@@ -21,20 +21,24 @@
             <hr>
             <br>
             <form method="post">
-                <p>First Name</p>
-                <input type="text" name="fname">
+                {% csrf_token %}
+                <p>Username</p>
+                <input type="text" name="username" required>
                 <br><br>
-                <p>Last Name</p>
-                <input type="text" name="lname">
+                <p>first Name</p>
+                <input type="text" name="fname" required>
+                <br><br>
+                <p>last Name</p>
+                <input type="text" name="lname" required>
                 <br><br>
                 <p>Email</p>
-                <input type="text" name="email">
+                <input type="text" name="email" required>
                 <br><br>
                 <p>Password</p>
-                <input type="password" name="password">
+                <input type="password" name="password" required>
                 <br><br>
                 <p>Confirm Password</p>
-                <input type="password" name="password">
+                <input type="password" name="cpassword" required>
                 <br><br>
                 <input type="submit" value="Sign up" id="submitBtn">
             </form>

@@ -22,8 +22,9 @@
             <hr>
             <br>
             <form method="post">
-                <p>Email</p>
-                <input type="text" name="email">
+                {% csrf_token %}
+                <p>Username</p>
+                <input type="text" name="username">
                 <br><br>
                 <p>Password</p>
                 <input type="password" name="password">
